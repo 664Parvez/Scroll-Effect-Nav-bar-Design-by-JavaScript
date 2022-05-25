@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+:root{
+    --header_font: 'Ephesis', cursive;
+    --full_website_font: 'Ubuntu', sans-serif;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: var(--full_website_font);
+}
+header{
+    background-image: url(bg.jpg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    #nav-bar{
+        padding: 50px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        position: fixed;
+        top: 0;
+        overflow: hidden;
+        width: 100%;
+        border-bottom: .5px solid #ffffff;
+        box-shadow: 0px 1px 7px #126830;
+    
+    #logo{
+        height: auto;
+        width: 100px;
+    }
+    
+        ul{
+            float: right;
+            list-style: none;
+            margin-top: 10px;
+            li{
+                display: inline-block;
+                
+                a{
+                    font-size: 18px;
+                    color: #fff;
+                    text-decoration: none;
+                    padding-left: 20px;
+                    font-weight: 700;
+                    transition: .3s ease-out;
+                }
+            }
+        }
+        ul li a:hover{
+            color: #94d4e9;
+            transition: .3s ease-in;
+        }
+    }
+}
